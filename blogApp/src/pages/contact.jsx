@@ -11,6 +11,8 @@ const Contact = () => {
       <br />
       <button onClick={resgister}>Submit</button>
       <button onClick={() => sendForm("prabin")}>Thank you</button>
+      <input placeholder="enter ur name" />
+      <button onClick={() => sendForm()}>register</button>
     </div>
   );
 };
