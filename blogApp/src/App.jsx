@@ -6,7 +6,9 @@ const App = () => {
     <>
       <Home />
       <Contact />
+      <br />
       <About title="about pra" description="it is about home page" />
+      <br />
     </>
   );
 };
