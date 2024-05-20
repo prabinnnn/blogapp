@@ -35,19 +35,17 @@ const Home = ({ data = [] }) => {
             <th>age</th>
           </tr>
         </thead>
-        {data.length > 0 ? (
-          data.map((user) => <li key={user.id}>{user.name}</li>)
-        ) : (
-          <>No Data</>
-        )}
-      </table>
-      <table>
         <tbody>
-          <tr>
-            <th>jill</th>
-            <th>smith</th>
-            <th>50</th>
-          </tr>
+          {data.length > 0 ? (
+            data.map((user, index) => (
+              <tr key={index}>
+                <th>{user.name}</th>
+                <th>{user.age}</th>
+              </tr>
+            ))
+          ) : (
+            <>No Data</>
+          )}
         </tbody>
       </table>
     </>
