@@ -31,7 +31,7 @@
 // export default Contact;
 const Contact = () => {
   const notify = (name = "user") => {
-    alert(`${name}`);
+    alert(`Welcome${name}`);
   };
   return (
     <>
