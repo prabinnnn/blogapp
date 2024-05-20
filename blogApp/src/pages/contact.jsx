@@ -30,7 +30,7 @@
 // };
 // export default Contact;
 const Contact = () => {
-  const notify = (name) => {
+  const notify = (name = "user") => {
     alert(`${name}`);
   };
   return (
@@ -38,7 +38,9 @@ const Contact = () => {
       Contact
       <br />
       <input placeholder="Enter Name" id="name" />
-      <button onMouseOver={notify("prabin")}>Sign Up</button>
+      <button onMouseOver={notify(document.getElementById("prabin"))}>
+        Sign Up
+      </button>
     </>
   );
 };
