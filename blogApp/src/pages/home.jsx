@@ -44,7 +44,9 @@ const Home = ({ data = [] }) => {
               </tr>
             ))
           ) : (
-            <>No Data</>
+            <td colSpan={2} style={{ TextAlign: "center" }}>
+              No Data
+            </td>
           )}
         </tbody>
       </table>
