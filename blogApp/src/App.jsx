@@ -2,7 +2,11 @@
 import Home from "./pages/home";
 // import Contact from "./pages/contact";
 const App = () => {
-  const users = [{ name: "prabin" }, { name: "rabin" }, { name: "nabin" }];
+  const users = [
+    { name: "prabin", age: "20" },
+    { name: "rabin", age: "21" },
+    { name: "nabin", age: "23" },
+  ];
   return (
     // <>
     //   {/* <Home />

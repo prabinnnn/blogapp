@@ -28,13 +28,28 @@
 const Home = ({ data = [] }) => {
   return (
     <>
-      <ul>
+      <table>
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>age</th>
+          </tr>
+        </thead>
         {data.length > 0 ? (
           data.map((user) => <li key={user.id}>{user.name}</li>)
         ) : (
           <>No Data</>
         )}
-      </ul>
+      </table>
+      <table>
+        <tbody>
+          <tr>
+            <th>jill</th>
+            <th>smith</th>
+            <th>50</th>
+          </tr>
+        </tbody>
+      </table>
     </>
   );
 };
