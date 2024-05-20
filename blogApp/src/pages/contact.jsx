@@ -30,12 +30,15 @@
 // };
 // export default Contact;
 const Contact = () => {
-  const notify = () => {};
+  const notify = (name) => {
+    alert(`${name}`);
+  };
   return (
     <>
       Contact
       <br />
-      <button onMouseOver={notify}>Sign Up</button>
+      <input placeholder="Enter Name" id="name" />
+      <button onMouseOver={notify("prabin")}>Sign Up</button>
     </>
   );
 };
