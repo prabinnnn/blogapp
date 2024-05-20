@@ -1,5 +1,19 @@
 const Home = ({ IsGoal = 0 }) => {
-  return <></>;
+  let result;
+  switch (true) {
+    case IsGoal === 0:
+      result = <MissedGoal />;
+      break;
+    case IsGoal === 1:
+      result = <Goal />;
+      break;
+    case IsGoal === 2:
+      result = <Hattrickgoal />;
+      break;
+    default:
+      result = <>No Goal Registration</>;
+  }
+  return <>{result}</>;
 };
 const Goal = () => {
   return <>1 Goal</>;
@@ -7,7 +21,7 @@ const Goal = () => {
 const MissedGoal = () => {
   return <>No Gaol!!!</>;
 };
-const Hattrick = () => {
-  return <></>;
+const Hattrickgoal = () => {
+  return <>2 Goal!!!</>;
 };
 export default Home;
