@@ -1,4 +1,5 @@
 // import About from "./pages/about";
+import Button from "./pages/Button";
 import Home from "./pages/home";
 // import Contact from "./pages/contact";
 const App = () => {
@@ -8,15 +9,10 @@ const App = () => {
     { name: "nabin", age: "23" },
   ];
   return (
-    // <>
-    //   {/* <Home />
-    //   <Contact />
-    //   <br />
-    //   <About title="about pra" description="it is about home page" />
-    //   <br /> */}
-    // </>
-
-    <Home data={users} />
+    <div>
+      <Home data={users} />
+      <Button />
+    </div>
   );
 };
 
