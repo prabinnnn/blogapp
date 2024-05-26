@@ -27,6 +27,11 @@ function Button() {
     model: "23",
     year: 2001,
   });
-  return <div>{car.name}</div>;
+  return (
+    <div>
+      {car.name}
+      <button onClick={setCar()}>change</button>
+    </div>
+  );
 }
 export default Button;
