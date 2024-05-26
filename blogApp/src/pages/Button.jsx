@@ -30,7 +30,15 @@ function Button() {
   return (
     <div>
       {car.name}
-      <button onClick={setCar()}>change</button>
+      <button
+        onClick={() =>
+          setCar((prev) => {
+            return { ...prev, name: "BMW" };
+          })
+        }
+      >
+        change
+      </button>
     </div>
   );
 }
