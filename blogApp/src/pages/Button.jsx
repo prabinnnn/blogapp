@@ -22,6 +22,11 @@
 // export default Button;
 import { useState } from "react";
 function Button() {
-  return <div>Button</div>;
+  const [car, setCar] = useState({
+    name: "bmw",
+    model: "23",
+    year: 2001,
+  });
+  return <div>{car.name}</div>;
 }
 export default Button;
