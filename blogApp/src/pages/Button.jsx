@@ -2,7 +2,13 @@ import { useState } from "react";
 
 function Button() {
   const [person, setPerson] = useState("prabin");
-  return <div>Button</div>;
+  const [color, setColor] = useState("red");
+  return (
+    <div>
+      Person:{person}
+      <button onClick={setPerson("Admin")}>change</button>
+    </div>
+  );
 }
 
 export default Button;
