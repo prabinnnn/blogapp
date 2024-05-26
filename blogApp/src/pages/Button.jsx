@@ -7,6 +7,8 @@ function Button() {
     <div>
       Person:{person}
       <button onClick={setPerson("Admin")}>change</button>
+      Color:{color}
+      <button onClick={setColor("white")}>change</button>
     </div>
   );
 }
