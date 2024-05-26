@@ -10,9 +10,9 @@ function Button() {
       <input
         type="text"
         placeholder="Enter a Name"
-        onChange={() => setTemp()}
+        onChange={(e) => setTemp(e.target.value)}
       />
-      <button onClick={setPerson("Admin")}>change</button>
+      <button onClick={setPerson(temp)}>change</button>
       Color:{color}
       <button onClick={setColor("white")}>change</button>
     </div>
